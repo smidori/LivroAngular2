@@ -1,0 +1,8 @@
+<h2>Lista	de	Pessoas</h2>
+<ul *ngFor="let pessoa of pessoas, let i = index; trackBy:meuSave">
+	<li >
+		posição: {{i + 1}} = [ {{pessoa.nome}} , id = {{pessoa.id}}]  
+	</li>
+</ul>
+
+<button (click)="atualizar()">atualizar</button>
